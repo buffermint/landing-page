@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="272px" height="45px" viewBox="0 0 272 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <text id="text-1" font-family="HKGroteskPro-SemiBold, HK Grotesk Pro" font-size="60" font-weight="500" letter-spacing="-1.5">
+            <tspan x="158.109375" y="126">Min</tspan>
+            <tspan x="255.298828" y="126">t</tspan>
+        </text>
+        <filter x="-1.3%" y="-2.1%" width="102.5%" height="104.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.529411765   0 0 0 0 0.894117647   0 0 0 0 0.858823529  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-3" font-family="HKGroteskPro-SemiBold, HK Grotesk Pro" font-size="60" font-weight="500" letter-spacing="-1.5">
+            <tspan x="0.1484375" y="126">Bu</tspan>
+            <tspan x="67.5195312" y="126">f</tspan>
+        </text>
+        <filter x="-1.7%" y="-2.1%" width="103.4%" height="104.2%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.529411765   0 0 0 0 0.894117647   0 0 0 0 0.858823529  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-5" font-family="HKGroteskPro-SemiBold, HK Grotesk Pro" font-size="60" font-weight="500" letter-spacing="-1.5">
+            <tspan x="124" y="54"></tspan>
+            <tspan x="88.2050781" y="126">fe</tspan>
+            <tspan x="136.123047" y="126">r</tspan>
+        </text>
+        <filter x="-2.1%" y="-1.0%" width="104.2%" height="102.1%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.529411765   0 0 0 0 0.894117647   0 0 0 0 0.858823529  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-4.000000, -83.000000)">
+            <g id="Mint" fill="#00ACB1" fill-opacity="0.99">
+                <use filter="url(#filter-2)" xlink:href="#text-1"></use>
+                <use fill-rule="evenodd" xlink:href="#text-1"></use>
+                <use xlink:href="#text-1"></use>
+            </g>
+            <g id="fer" fill="#015D67">
+                <use fill-opacity="1" filter="url(#filter-4)" xlink:href="#text-3"></use>
+                <use fill-rule="evenodd" xlink:href="#text-3"></use>
+                <use fill-opacity="1" xlink:href="#text-3"></use>
+            </g>
+            <g id="Buf" fill="#015D67">
+                <use fill-opacity="1" filter="url(#filter-6)" xlink:href="#text-5"></use>
+                <use fill-rule="evenodd" xlink:href="#text-5"></use>
+                <use fill-opacity="1" xlink:href="#text-5"></use>
+            </g>
+        </g>
+    </g>
+</svg>

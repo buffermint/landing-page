@@ -1,0 +1,45 @@
+//
+// user.scss
+// Use this to write your custom SCSS
+//
+
+.navbar-brand-img,
+.footer-brand {
+    max-height: 1.4rem;
+    @media (max-width: 768px) {
+        max-height: 1.2rem;
+    }
+}
+
+.navbar.navbar-expand-lg.navbar-light{
+    background-color: $gray-300;
+}
+
+.pricing-cta .custom-card-btn{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.pricing-cta .custom-card-btn:first-child{
+    background-color: $logo-secondary;
+    margin-top:0.5rem;
+    border-bottom-right-radius: 0;
+    &:hover{
+        background-color: $gray-700;
+        color: $white;
+    }
+}
+.pricing-cta .custom-card-btn:last-child{
+    margin-top:0.5rem;
+    border-left: solid $gray-200;
+    border-bottom-left-radius: 0;
+}
+
+footer .site-links{
+    a:hover{
+      text-decoration: none;
+    }
+    h4:hover{
+      color: $white !important;
+    }
+}
