@@ -16,6 +16,9 @@ const replace = require('gulp-replace');
 const sass = require('gulp-sass');
 const uglify = require('gulp-uglify');
 const useref = require('gulp-useref');
+const sitemap = require('gulp-sitemap');
+const save = require('gulp-save');
+const robots = require('gulp-robots');
 
 // Define paths
 const paths = {
@@ -198,6 +201,25 @@ gulp.task('html:preview', function() {
     .pipe(gulp.dest(paths.dist.base.dir));
 });
 
-gulp.task('build', gulp.series(gulp.parallel('clean:tmp', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'html'));
+gulp.task('sitemap', function () {
+  return gulp.src('dist/*.html', {
+          read: false
+      })
+      .pipe(sitemap({
+          siteUrl: 'https://www.buffermint.com'
+      }))
+      .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('robots', function () {
+  return gulp.src('dist/index.html')
+      .pipe(robots({
+          useragent: '*',
+          disallow: ['cgi-bin/']
+      }))
+      .pipe(gulp.dest('./dist/'));
+});
+
+gulp.task('build', gulp.series(gulp.parallel('clean:tmp', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'html', 'sitemap', 'robots'));
 gulp.task('build:preview', gulp.series(gulp.parallel('clean:tmp', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'html:preview'));
 gulp.task('default', gulp.series(gulp.parallel('fileinclude', 'scss'), gulp.parallel('browsersync', 'watch')));
