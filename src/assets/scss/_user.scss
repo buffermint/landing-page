@@ -2,6 +2,10 @@
 // user.scss
 // Use this to write your custom SCSS
 //
+a:hover {
+    color: $gray-700;
+    text-decoration: underline;
+}
 
 .navbar-brand-img,
 .footer-brand {

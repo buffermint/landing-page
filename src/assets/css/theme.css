@@ -13997,6 +13997,10 @@ body.compensate-for-scrollbar {
   background: -webkit-gradient(linear, left top, left bottom, from(#F0F5F6), to(#e5eeef));
   background: linear-gradient(180deg, #F0F5F6 0%, #e5eeef 100%); }
 
+a:hover {
+  color: #47878e;
+  text-decoration: underline; }
+
 .navbar-brand-img,
 .footer-brand {
   max-height: 1.4rem; }

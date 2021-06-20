@@ -42,3 +42,12 @@
 <script src="@@webRoot/assets/js/tooltips.js"></script>
 <script src="@@webRoot/assets/js/typed.js"></script>
 <!-- endbuild -->
+
+<script>
+    const navLinks = document.querySelectorAll('.nav-item')
+    navLinks.forEach((l) => {
+        l.addEventListener('click', () => {
+            $('#navbarCollapse').collapse('toggle')
+        })
+    })
+</script>
