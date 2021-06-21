@@ -44,10 +44,13 @@
 <!-- endbuild -->
 
 <script>
-    const navLinks = document.querySelectorAll('.nav-item')
-    navLinks.forEach((l) => {
+    if(window.screen.width < 993){
+        const navLinks = document.querySelectorAll('.nav-item')
+        navLinks.forEach((l) => {
         l.addEventListener('click', () => {
             $('#navbarCollapse').collapse('toggle')
         })
     })
+    }
+
 </script>
