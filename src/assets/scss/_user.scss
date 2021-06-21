@@ -24,19 +24,19 @@ a:hover {
     border-top-right-radius: 0;
 }
 
-.pricing-cta .custom-card-btn:first-child{
-    background-color: $logo-secondary;
+.pricing-cta .custom-card-btn-left{
+    background-color: $gray-700;
     margin-top:0.5rem;
     border-bottom-right-radius: 0;
     &:hover{
-        background-color: $gray-700;
+        background-color: $gray-900;
         color: $white;
     }
 }
-.pricing-cta .custom-card-btn:last-child{
+.pricing-cta .custom-card-btn-right{
     margin-top:0.5rem;
     border-left: solid $gray-200;
-    border-bottom-left-radius: 0;
+    // border-bottom-left-radius: 0;
 }
 
 footer .site-links{

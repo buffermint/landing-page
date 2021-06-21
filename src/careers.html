@@ -117,10 +117,7 @@
               Let’s find you an <span class="text-primary">open position</span>.
             </h2>
 
-            <!-- Text -->
-            <p class="font-size-lg text-dark mt-7 mt-md-9 mb-7 mb-md-12">
-              Thank you for your interest. There are no open positions at BufferMint right now. This is likely to change very soon. We are always looking for exceptional talent, please check back in a few weeks.
-            </p>
+            @@include("partials/workable.html")
 
           </div>
         </div> <!-- / .row -->
@@ -138,26 +135,5 @@
     @@include("partials/scripts.html")
 
   </body>
-  <!-- <style>
-     body::-webkit-scrollbar {
-      display: none;
-    }
-  </style>
-  <script>
-    var sections = document.getElementsByClassName('scroll-section');
 
-    Array.from(sections).forEach(function(el, index){
-      var lastScrollTop = 0;
-        el.addEventListener("scroll", function(){
-          alert('down');
-          var st = window.pageYOffset || document.documentElement.scrollTop;
-          if (st > lastScrollTop && sections[index + 1]){
-            sections[index + 1].scrollIntoView('smooth');
-          } else if(sections[index - 1]) {
-            sections[index - 1].scrollIntoView('smooth');
-          }
-          lastScrollTop = st <= 0 ? 0 : st;
-        }, false);
-    })
-  </script> -->
 </html>
