@@ -14033,3 +14033,16 @@ footer .site-links a:hover {
 
 footer .site-links h4:hover {
   color: #fafcfc !important; }
+
+.hero-section h1 {
+  top: -175px; }
+  @media (max-width: 992px) {
+    .hero-section h1 {
+      top: -75px; } }
+
+.hero-section h2 {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 75px; }
