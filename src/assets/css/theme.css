@@ -14006,6 +14006,8 @@ a:hover {
 
 .navbar-brand-img,
 .footer-brand {
+  position: relative;
+  top: -5px;
   max-height: 1.4rem; }
   @media (max-width: 768px) {
     .navbar-brand-img,
@@ -14050,3 +14052,8 @@ footer .site-links h4:hover {
 
 .hero-section .third-typed-container {
   top: 150px; }
+
+@media (max-width: 992px) {
+  #scroll-btn {
+    position: relative;
+    top: -10px; } }
