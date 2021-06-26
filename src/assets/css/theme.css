@@ -14012,7 +14012,8 @@ a:hover {
   @media (max-width: 768px) {
     .navbar-brand-img,
     .footer-brand {
-      max-height: 1.2rem; } }
+      max-height: 1.2rem;
+      top: 0px; } }
 
 .navbar.navbar-expand-lg.navbar-light {
   background-color: #e5eeef; }
