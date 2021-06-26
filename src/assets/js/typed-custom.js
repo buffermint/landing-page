@@ -1,24 +1,22 @@
-let defaultOptions = {
+var defaultOptions = {
   typeSpeed: 40,
   backSpeed: 30,
   backDelay: 1000,
-  loop: true,
-};
+}
 
-let firstTypedOptions = {
+var firstTypedOptions = {
   stringsElement: "#first-typed-text",
   loop: false,
-  loopCount: false,
   onComplete: function (self) {
 
-    setTimeout(() => {
+    setTimeout(function() {
       $(".hero-section .first-typed-container .typed-cursor").css({'visibility': 'hidden'});
 
-      setTimeout(() => {
+      setTimeout(function() {
         $(".hero-section .first-typed-container").animate({top: '-100px'}, 100);
       }, 500)
 
-      setTimeout(() => {
+      setTimeout(function() {
         new Typed("#second-typed", Object.assign(defaultOptions, secondTypedOptions));
       }, 2500)
     }, 500)
@@ -27,22 +25,22 @@ let firstTypedOptions = {
 
 new Typed("#first-typed", Object.assign(defaultOptions, firstTypedOptions));
 
-let secondTypedOptions = {
-  stringsElement: "#second-typed-text",
+var secondTypedOptions = {
   loop: false,
+  stringsElement: "#second-typed-text",
   onComplete: function () {
 
-    setTimeout(() => {
+    setTimeout(function() {
       // $(".hero-section .second-typed-container .typed-cursor").hide();
       $(".hero-section .second-typed-container .typed-cursor").css({'visibility': 'hidden'});
 
-      setTimeout(() => {
+      setTimeout(function() {
         $(".hero-section .first-typed-container").animate({top: '-200px'}, 100);
         $(".hero-section .second-typed-container").animate({top: '-100px'}, 100);
       }, 500)
 
 
-      setTimeout(() => {
+      setTimeout(function() {
         new Typed("#third-typed", Object.assign(defaultOptions, thirdTypedOptions));
       }, 2500)
     }, 500)
@@ -50,8 +48,9 @@ let secondTypedOptions = {
 };
 
 
-let thirdTypedOptions = {
+var thirdTypedOptions = {
   stringsElement: "#third-typed-text",
   backDelay: 2000,
   loop: true,
+  onComplete: function(){}
 };

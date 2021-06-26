@@ -14038,7 +14038,7 @@ footer .site-links h4:hover {
   color: #fafcfc !important; }
 
 .hero-section .first-typed-container .typed-cursor, .hero-section .second-typed-container .typed-cursor {
-  left: -10px;
+  left: -5px;
   position: relative; }
 
 .hero-section h1, .hero-section h2, .hero-section h3 {

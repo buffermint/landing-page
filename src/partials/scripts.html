@@ -48,7 +48,7 @@
     if(window.screen.width < 993){
         const navLinks = document.querySelectorAll('.nav-item')
         navLinks.forEach((l) => {
-        l.addEventListener('click', () => {
+        l.addEventListener('click', function() {
             $('#navbarCollapse').collapse('toggle')
         })
     })
