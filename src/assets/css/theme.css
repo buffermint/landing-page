@@ -13997,6 +13997,9 @@ body.compensate-for-scrollbar {
   background: -webkit-gradient(linear, left top, left bottom, from(#F0F5F6), to(#e5eeef));
   background: linear-gradient(180deg, #F0F5F6 0%, #e5eeef 100%); }
 
+.text-logo-secondary {
+  color: #09abb1; }
+
 a:hover {
   color: #47878e;
   text-decoration: underline; }
@@ -14034,16 +14037,16 @@ footer .site-links a:hover {
 footer .site-links h4:hover {
   color: #fafcfc !important; }
 
-.hero-section h1 {
-  top: -175px;
-  left: 0; }
-  @media (max-width: 992px) {
-    .hero-section h1 {
-      top: -75px; } }
+.hero-section .first-typed-container .typed-cursor, .hero-section .second-typed-container .typed-cursor {
+  left: -10px;
+  position: relative; }
 
-.hero-section h2 {
+.hero-section h1, .hero-section h2, .hero-section h3 {
   left: 0;
   right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  top: 75px; }
+  -webkit-transition: all 1s ease;
+  -ie-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.hero-section .third-typed-container {
+  top: 150px; }
